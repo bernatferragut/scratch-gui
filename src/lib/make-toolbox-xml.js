@@ -14,6 +14,7 @@ const motion = function (isStage, targetId) {
         ${isStage ? `
         <label text="${stageSelected}"></label>
         ` : `
+        <!-- Move X Steps Block -->
         <block type="motion_movesteps">
             <value name="STEPS">
                 <shadow type="math_number">
@@ -21,6 +22,8 @@ const motion = function (isStage, targetId) {
                 </shadow>
             </value>
         </block>
+        <!-- Move 100 Steps Block -->
+        <block type="motion_move100steps" />
         <block type="motion_turnright">
             <value name="DEGREES">
                 <shadow type="math_number">
