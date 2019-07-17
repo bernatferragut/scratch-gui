@@ -24,6 +24,10 @@ const motion = function (isStage, targetId) {
         </block>
         <!-- Move 100 Steps Block -->
         <block type="motion_move100steps" />
+        ${blockSeparator}
+        <!-- Ninja Block -->
+        <block type="motion_ninja" />
+
         <block type="motion_turnright">
             <value name="DEGREES">
                 <shadow type="math_number">
